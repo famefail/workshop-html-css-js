@@ -1,0 +1,41 @@
+.container{
+    place-items: center;
+    display: grid;
+    width: 100%;
+}
+.question{
+    margin-top: 1rem;
+    width: 30%;
+    padding: 1rem;
+    border:  solid 1px saddlebrown;
+    border-radius: 30px;
+    display: block;
+    
+}
+.question-title{
+  display:flex;
+  justify-content: space-between;
+  height: auto;
+}
+.question-btn{
+    border: 1px solid saddlebrown;   
+    border-radius: 30px;
+    color: saddlebrown;
+    cursor:pointer;
+    margin-left: 4px;
+}
+.title{
+    height: 0px;
+    color: saddlebrown;
+    overflow:hidden;
+    transition: 1s 0.1s;
+    word-wrap: break-word;
+}
+.question-btn :hover{
+  transform: rotate(90deg);
+}
+.title-add{
+  overflow: visible;
+  height: auto;
+  padding: 1rem;
+}
