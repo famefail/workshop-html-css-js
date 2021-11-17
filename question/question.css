@@ -1,41 +1,59 @@
+body{
+  background-color: rgb(27, 27, 27);
+}
+h1{
+  font-size: 40px;
+}
 .container{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     place-items: center;
     display: grid;
     width: 100%;
-}
+    color: rgb(103, 109, 116);
+  }
 .question{
+    border:  solid 1px rgb(7, 59, 113);
     margin-top: 1rem;
     width: 30%;
-    padding: 1rem;
-    border:  solid 1px saddlebrown;
+    padding: 1rem; 
     border-radius: 30px;
     display: block;
-    
+    text-overflow: wrap;
 }
 .question-title{
   display:flex;
   justify-content: space-between;
-  height: auto;
+  word-wrap: break-word;
+}
+.question-title h4{
+  color:rgb(179, 190, 201);
+  font-size: 20px;
 }
 .question-btn{
-    border: 1px solid saddlebrown;   
+    border: 1px solid rgb(155, 61, 127);   
+    color: rgb(155, 61, 127);
+    background-color: rgb(27, 27, 27);
     border-radius: 30px;
-    color: saddlebrown;
     cursor:pointer;
     margin-left: 4px;
+    display: block;
+    height: 20px;
+    
 }
 .title{
-    height: 0px;
-    color: saddlebrown;
+    color: rgb(208, 202, 208);
+    height: 0px;  
     overflow:hidden;
-    transition: 1s 0.1s;
+    transition: 1s ;
     word-wrap: break-word;
+    display: block;
 }
-.question-btn :hover{
-  transform: rotate(90deg);
-}
-.title-add{
+.title-add .title{
   overflow: visible;
   height: auto;
   padding: 1rem;
+}
+.title-add .question-btn{
+  background-color: rgb(155, 61, 127);
+  color:white
 }
