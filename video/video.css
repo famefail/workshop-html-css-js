@@ -1,0 +1,83 @@
+h1{
+    font-size: 300px;
+}
+h3{
+    font-size: 30px;
+}
+body{
+    background-color: black;
+}
+.video-container{
+     margin: auto;
+    height: 98%;
+    width: 98%;
+    z-index: -2;
+    position: absolute;
+    object-fit: cover;
+}
+.text{   
+    place-items: center;
+    display: grid;
+    height: 100%;
+    z-index: 2;
+}
+.title{
+    position: relative;
+    color: aliceblue;
+}
+.des{
+    text-align: center;
+    width: 80%;
+    bottom: 0;
+    word-spacing: 2px;
+    font-size: 40px;
+    z-index: 3;
+    color: white;
+    position: absolute;
+    transition: 1s;
+    display: none;
+}
+.switch-btn{
+    place-items: center;
+    height: 42px;
+    width: 10%;
+    position: absolute;
+    display: inline-flex;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(100, 51, 53);
+    bottom: 0;
+    z-index: 1;
+}
+span{
+    text-transform: capitalize;
+    z-index: -3;
+    padding: 20px;
+    
+}
+.switch{
+    position: absolute;
+    background-color: rgb(18, 143, 192);
+    top:-1;
+    left: -1;
+    z-index: 3;
+    display: flex;
+    width: 20%;
+    border-radius: 10px;
+    transition: 1s;
+}
+.rotate{
+    background-color: rgb(235, 157, 185);
+    left:80px;
+}
+.opacity{
+    opacity: 0.5;
+}
+.show{
+    display: block;
+    bottom:40%;
+}
+.hide{
+    display: none;    
+}

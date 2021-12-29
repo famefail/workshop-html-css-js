@@ -1,5 +1,6 @@
 body{
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(241, 229, 229);
 }
 h4{
     color: rgb(255, 1, 91);
@@ -30,7 +31,9 @@ img{
     display: flex;
     border: 1px solid rgb(255, 1, 91);
     border-radius: 10px; 
+    background-color: rgb(247, 232, 232);
 }
+
 .dsc{
    padding-left: 20px;
 }
@@ -51,18 +54,29 @@ img{
 .btn-filter{
     font-size: 18px;
     padding: 10px 20px 10px 20px;
-    background-color: white;
+    background-color: rgb(247, 232, 232);
     border: 1px solid rgb(255, 1, 91);
     color:rgb(129, 5, 48);
     border-radius: 10px;
     transition: 0.5s;
+    cursor: pointer;
 }
 .btn-filter .show {
     color:aqua;
 }
-.two-column{
-     display: flex;
-    width: 100%;
-    /* background-color: antiquewhite; */
-    
+@media screen and (max-width: 800px){
+    .container{
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+    h3{
+        text-align: center;
+    }
+    .dsc{
+      display: none;
+    } 
+    .menu-price{
+        text-align: center;
+    }
 }

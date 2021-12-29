@@ -11,7 +11,7 @@ const menu = [
         id:4,
         name: "toast",
         price:35,
-        des: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non ad, obcaecati repudiandae dolorem incidunt a laboriosam ullam libero ab magnam maiores in veniam cupiditate magni inventore, fuga hic, tenetur sed.",
+        des: "laboriosam ullam libero ab magnam maiores in veniam cupiditate magni inventore, fuga hic, tenetur sed.",
         pic: "https://christieathome.com/wp-content/uploads/2021/01/HK-French-Toast-New-1-b-scaled.jpg",
         category: "food"
     },
@@ -51,42 +51,10 @@ const menu = [
 const section = document.querySelector('.menu')
 const btnFilters = document.querySelectorAll('.btn-filter')
 
-btnFilters.forEach((btnFilter) =>{
-    
-      btnFilter.addEventListener("click",function (event) {
-              
-        const category = event.target.dataset.id
-        const menuFilter = menu.filter(function (item){ 
-        const dataset = "dataset-" + item.category;
-            
-            if(dataset === category){
-            return item
-                
-                } 
-            })
-              
-         if(category == "dataset-all"){
-             showItem(menu)
-         }else{
-            showItem(menuFilter)
-         }
-
-      })
-
-      btnFilter.addEventListener("mouseenter",function (){
-       btnFilter.style.color  = "white"
-       btnFilter.style.backgroundColor = "rgb(255, 1, 91)"
-    })
-
-      btnFilter.addEventListener("mouseleave", function(){
-          btnFilter.style.color = "black"
-          btnFilter.style.backgroundColor  = "white"
-      })
-      
-})
 
 window.addEventListener('load', function () {
         showItem(menu);
+        filterItem();
     });
 
     //เรียกรายละเอียดเมนู
@@ -117,4 +85,39 @@ window.addEventListener('load', function () {
         })
         menu1 = menu1.join(" ")
        section.innerHTML = menu1
+    }
+
+    function filterItem(){
+        btnFilters.forEach((btnFilter) =>{
+    
+            btnFilter.addEventListener("click",function (event) { //เพิ่ม event iterate เป็น event
+                    
+              const category = event.target.dataset.id    
+              const menuFilter = menu.filter(function (item){  
+              const dataset = "dataset-" + item.category;
+                  
+                  if(dataset === category){
+                      return item    
+                      } 
+                  })
+                    
+               if(category == "dataset-all"){
+                   showItem(menu)
+               }else{
+                  showItem(menuFilter)
+               }
+      
+            })
+      
+            btnFilter.addEventListener("mouseenter",function (){
+             btnFilter.style.color  = "white"
+             btnFilter.style.backgroundColor = "rgb(129, 5, 48)"
+          })
+      
+            btnFilter.addEventListener("mouseleave", function(){
+                btnFilter.style.color = "rgb(129, 5, 48)"
+                btnFilter.style.backgroundColor  = "rgb(247, 232, 232)"
+            })
+            
+      })
     }
