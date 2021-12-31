@@ -1,0 +1,132 @@
+h1{
+    background-size: auto;
+    background-color: blueviolet;
+}
+ul.menu{
+    background-color: rgb(230, 28, 35);
+    list-style-type: none;
+    margin:0px;
+    padding: 0 10% 0 10%;
+    position: relative;
+    overflow: auto;
+}
+ul.menu li a{
+    color:azure;
+    text-decoration: none;
+    float:left;
+    padding:0.5em,2em,0.5em,2em;
+    
+}
+td{
+    width: 35%;
+    
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+}
+th{
+    text-align: left;
+    color:white;
+    font-size: 50px;
+}
+img{
+    width :350px;
+    height: 350px;
+ 
+}
+
+.contrast{
+    color:grey;
+    text-align: center;
+}
+.contrast:hover{
+    color: whitesmoke;
+    
+}
+div{
+    text-align: left;
+}
+.new{
+    width: 25em;
+    color:cadetblue
+}
+.bg-contract{
+    background-color: rgb(20, 20, 20);
+}
+.contract{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    text-align: center;
+    background-color: rgb(230, 28, 35);
+    color: whitesmoke;
+}
+td:hover{
+    background-color: rgb(230, 28, 35);
+    text-decoration: white;
+    color:whitesmoke;
+}
+h3{
+    color:whitesmoke;
+}
+@font-face{
+    font-family: Spefont;
+    src: url(font/Circular.ttf);
+}
+body{
+    font-family: Spefont;
+}
+main{
+    margin-left: 150px;
+   height: 600px;
+   width: 1200px;
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    color: whitesmoke;
+    font-size: 40px;
+}
+a:hover{
+    color:rgb(230, 28, 35);
+}
+#1{
+    height: 600px;
+    width: 600px;
+}
+#2{
+    height: 600px;
+    width: 600px;    
+}
+#3{
+    height: 600px;
+    width: 600px;   
+    
+}
+.slide{
+   
+    height: 500px;
+    width: 1200px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.middle{
+    text-align: center;
+    font-size: 25px;
+}
+footer{
+    color:whitesmoke;
+}
+@media screen and (max-width: 800px){
+.contract{  
+    margin-left: 0px;
+    margin-right: 0;
+}
+}
+.map{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 24px;
+}
